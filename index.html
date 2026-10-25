@@ -65,7 +65,7 @@
         }
     </script>
     <style>
-        html { scroll-behavior: smooth; }
+        html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
 
         ::selection { background: #bf5700; color: white; }
 
@@ -207,7 +207,7 @@
                 <a href="#timeline" class="px-4 py-2 text-sm font-medium text-charcoal-light hover:text-burnt-orange transition-colors rounded-lg hover:bg-burnt-orange/5">Timeline</a>
                 <a href="#payoff" class="px-4 py-2 text-sm font-medium text-charcoal-light hover:text-burnt-orange transition-colors rounded-lg hover:bg-burnt-orange/5">Why It Matters</a>
                 <a href="about.html" class="px-4 py-2 text-sm font-medium text-charcoal-light hover:text-burnt-orange transition-colors rounded-lg hover:bg-burnt-orange/5">About</a>
-                <a href="summary.html" class="ml-2 px-5 py-2 text-sm font-medium text-white btn-primary rounded-lg">Read More</a>
+                <a href="#read" class="ml-2 px-5 py-2 text-sm font-medium text-white btn-primary rounded-lg">Read More</a>
             </div>
 
             <!-- Mobile Menu Button -->
@@ -234,7 +234,7 @@
                 <a href="#timeline" class="px-4 py-3 text-charcoal hover:text-burnt-orange hover:bg-burnt-orange/5 rounded-lg transition-colors">Timeline</a>
                 <a href="#payoff" class="px-4 py-3 text-charcoal hover:text-burnt-orange hover:bg-burnt-orange/5 rounded-lg transition-colors">Why It Matters</a>
                 <a href="about.html" class="px-4 py-3 text-charcoal hover:text-burnt-orange hover:bg-burnt-orange/5 rounded-lg transition-colors">About</a>
-                <a href="summary.html" class="mt-4 px-4 py-3 text-center text-white btn-primary rounded-lg">Read More</a>
+                <a href="#read" class="mt-4 px-4 py-3 text-center text-white btn-primary rounded-lg">Read More</a>
             </div>
         </div>
     </div>
@@ -625,11 +625,11 @@
             <span class="tag bg-burnt-orange/10 text-burnt-orange font-mono uppercase rounded-full">Read More</span>
             <h2 class="font-serif text-4xl md:text-5xl font-semibold mt-6 mb-4">Longer Documents</h2>
             <p class="text-charcoal/60 max-w-2xl mx-auto text-lg">
-                Longer excerpts and a detailed section-by-section summary will be available here.
+                A detailed section-by-section summary, plus selected posts from the decwar.org blog.
             </p>
         </div>
 
-        <div class="max-w-md mx-auto">
+        <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             <a href="summary.html" class="card-dark rounded-2xl p-6 group block">
                 <div class="flex items-center gap-3 mb-4">
                     <svg class="w-8 h-8 text-burnt-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
@@ -641,6 +641,21 @@
                 </p>
                 <span class="inline-flex items-center gap-1 text-burnt-orange text-sm font-medium">
                         Read the summary
+                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </span>
+            </a>
+
+            <a href="houston.html" class="card-dark rounded-2xl p-6 group block">
+                <div class="flex items-center gap-3 mb-4">
+                    <svg class="w-8 h-8 text-burnt-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+                    <span class="font-mono text-xs text-white/50">From the Blog</span>
+                </div>
+                <h3 class="font-serif text-xl font-semibold text-white mb-2 group-hover:text-burnt-orange transition-colors">Houston</h3>
+                <p class="text-white/60 text-sm leading-relaxed mb-4">
+                    Posts from the decwar.org blog on the Houston thread &mdash; Humble Oil research, the IBM CPC, reservoir modeling, and the birth of ADI.
+                </p>
+                <span class="inline-flex items-center gap-1 text-burnt-orange text-sm font-medium">
+                        Read the posts
                         <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                     </span>
             </a>
@@ -667,7 +682,7 @@
                 <a href="#timeline" class="hover:text-white transition-colors">Timeline</a>
                 <a href="#payoff" class="hover:text-white transition-colors">Why It Matters</a>
                 <a href="about.html" class="hover:text-white transition-colors">About</a>
-                <a href="summary.html" class="hover:text-white transition-colors">Read More</a>
+                <a href="#read" class="hover:text-white transition-colors">Read More</a>
             </div>
 
             <p class="font-mono text-xs text-white/30">
